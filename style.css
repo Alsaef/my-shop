@@ -1,0 +1,239 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a8a6a6;
+    padding: 10px;
+}
+.logo{
+    color: white;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-right: 20px;
+    
+}
+ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* animaion */
+@keyframes banner {
+    0%{
+        left: 0;
+    }
+    50%{
+        left: 15px;
+    }
+    100%{
+      left: 0; 
+    }
+}
+
+/* banner style */
+.banner{
+    display: flex;
+    justify-content: center;
+   background-color:  #a8a6a6;
+   gap: 5%;
+   align-items: center;
+}
+.home>h1{
+    color: orange;
+}
+.home h2,p{
+    color: white;
+}
+.home a{
+    padding: 10px  30px;
+    color: white;
+    background-color: orange;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.home{
+    font-weight: 600;
+}
+.home{
+    margin: 0 5% 0 5%;
+    padding-left: 5%;
+}
+.home img{
+    width: 50%;
+    position: relative;
+    top: 4px;
+    animation-name: banner;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+/* our product */
+.products-continner{
+    margin-top: 50px;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    grid-column-gap: 15px;
+}
+.product-title{
+    text-align: center;
+}
+.products hr{
+    border: 1px black solid;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: rgb(255, 234, 209);
+    margin: 5px 5% 5px 5%;
+    margin-top: 10px;
+ 
+}
+.product img{
+  width: 60%;
+  border: 1px grey solid;
+}
+.product:hover {
+    transform: scale(1.1);
+}
+/* our latet product */
+.latest-product{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-top: 50px;
+}
+.latest{
+    display: flex;
+    align-items: center;
+    background-color: #a8a6a6;
+    padding: 5%;
+    gap: 10px;
+    color: white;
+}
+.latest a{
+    padding: 10px 20px ;
+    color: white;
+    background-color: orange;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.latest img{
+    width: 20%;
+   
+}
+.woman img{
+    width: 18%;
+}
+/* pending */
+.pending-product-con{
+    margin-top: 100px;
+}
+.pending-product-con h2{
+    text-align: center;
+}
+.pending-product{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.panding{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+}
+.panding img{
+    width: 60%;
+}
+/* footer */
+footer{
+    margin-top: 100px;
+    background-color: #6C6C6C;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+.footer-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    color: white;
+}
+.footer-banner img{
+    width: 5%;
+    background-color: white;
+}
+.text a {
+ font-size: 20px;
+ color: #FFFFFF;
+}
+.icon{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+ .icon1{
+    color: #FFFFFF;
+} 
+/* mobile view */
+@media only screen and (max-width:688px) {
+.body{
+    width: 100%;
+}
+.logo{
+   font-size: 20px;
+}
+.banner{
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.home{
+    text-align: center;
+}
+.products{
+    grid-template-columns: repeat(1,1fr);
+}
+.latest-product{
+   flex-direction: column;
+   gap: 20px;
+}
+.pending-product{
+   grid-template-columns: repeat(1,1fr);
+}
+}
+/* tablet */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .banner{
+        padding: 30px;
+    }
+}
